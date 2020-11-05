@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DepartmentsModule } from './departments/departments.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,9 @@ import { DepartmentsModule } from './departments/departments.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DepartmentsModule
+    DepartmentsModule,
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

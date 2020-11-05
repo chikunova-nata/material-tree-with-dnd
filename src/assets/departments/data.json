@@ -1,0 +1,36 @@
+{
+  "departments": [
+    {
+      "name": "Logistics",
+      "employees": [
+        {
+          "name": "Leanne Graham"},
+        {
+          "name": "Ervin Howell"},
+        {
+          "name": "Antonette Shanna"}
+      ]
+    }, {
+      "name": "Marketing",
+      "employees": [
+        {
+          "name": "Accounting and Finance",
+          "employees": [
+            {
+              "name": "Clementine Bauch"},
+            {
+              "name": "Patricia Lebsack"}
+          ]
+        }, {
+          "name": "Purchasing",
+          "employees": [
+            {
+              "name": "Chelsey Dietrich"},
+            {
+              "name": "Kurtis Weissnat"}
+          ]
+        }
+      ]
+    }
+  ]
+}
