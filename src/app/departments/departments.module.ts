@@ -7,14 +7,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
 import { CdkTreeModule } from '@angular/cdk/tree';
+import { HttpClientModule } from '@angular/common/http';
+import { DepartmentsDetailsComponent } from './departments-details/departments-details.component';
 
 @NgModule({
   declarations: [
-    DepartmentsComponent
+    DepartmentsComponent,
+    DepartmentsDetailsComponent
   ],
   imports: [
     CommonModule,
     DepartmentsRoutingModule,
+    HttpClientModule,
     MatTreeModule,
     MatIconModule,
     MatProgressBarModule,

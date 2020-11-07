@@ -4,7 +4,7 @@ import { MatTreeNestedDataSource } from '@angular/material/tree';
 import { DepartmentNodeModel } from './models/department-node.model';
 import { DynamicDataSourceService } from './services/dynamic-data-source.service';
 import { DepartmentDataModel } from './models/department-data.model';
-
+import { CdkDragDrop } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-departments',
@@ -12,7 +12,7 @@ import { DepartmentDataModel } from './models/department-data.model';
   styleUrls: ['./departments.component.scss']
 })
 export class DepartmentsComponent implements OnInit {
-  treeControl = new NestedTreeControl<DepartmentNodeModel>(node => node.employees);
+  treeControl = new NestedTreeControl<any>(node => node.departments);
   dataSource = new MatTreeNestedDataSource<DepartmentNodeModel>();
 
   constructor(private dynamicDataSourceService: DynamicDataSourceService) {

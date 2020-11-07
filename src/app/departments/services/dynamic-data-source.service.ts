@@ -5,10 +5,11 @@ import { DepartmentDataModel } from '../models/department-data.model';
 
 @Injectable({providedIn: 'root'})
 export class DynamicDataSourceService {
+  API_URL = '/assets/departments/data.json';
 
   constructor(private http: HttpClient) {}
 
   getJSON(): Observable<DepartmentDataModel> {
-    return this.http.get('./assets/departments/data.json');
+    return this.http.get(this.API_URL);
   }
 }

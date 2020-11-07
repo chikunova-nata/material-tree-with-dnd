@@ -4,32 +4,58 @@
       "name": "Logistics",
       "employees": [
         {
-          "name": "Leanne Graham"},
+          "firstName": "Leanne",
+          "lastName": "Graham",
+          "birthDate": "01/12/1990",
+          "speciality": "economist"
+        },
         {
-          "name": "Ervin Howell"},
+          "firstName": "Ervin",
+          "lastName": "Howell",
+          "birthDate": "03/12/1993",
+          "speciality": "driver"
+        },
         {
-          "name": "Antonette Shanna"}
+          "firstName": "Antonette",
+          "lastName": "Shanna",
+          "birthDate": "02/12/1992",
+          "speciality": "administrator"
+        }
       ]
     }, {
-      "name": "Marketing",
+      "name": "Accounting and Finance",
       "employees": [
         {
-          "name": "Accounting and Finance",
-          "employees": [
-            {
-              "name": "Clementine Bauch"},
-            {
-              "name": "Patricia Lebsack"}
-          ]
-        }, {
-          "name": "Purchasing",
-          "employees": [
-            {
-              "name": "Chelsey Dietrich"},
-            {
-              "name": "Kurtis Weissnat"}
-          ]
+          "firstName": "Clementine",
+          "lastName": "Bauch",
+          "birthDate": "05/12/1985",
+          "speciality": "accounter"
+        },
+        {
+          "firstName": "Patricia",
+          "lastName": "Lebsack",
+          "birthDate": "04/12/1984",
+          "speciality": "accounter"
         }
+      ],
+      "departments": [
+        {
+        "name": "Purchasing",
+        "employees": [
+          {
+            "firstName": "Chelsey",
+            "lastName": "Dietrich",
+            "birthDate": "06/12/1996",
+            "speciality": "marketer"
+          },
+          {
+            "firstName": "Kurtis",
+            "lastName": "Weissnat",
+            "birthDate": "07/12/1987",
+            "speciality": "marketer"
+          }
+        ]
+      }
       ]
     }
   ]

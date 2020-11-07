@@ -1,1 +1,19 @@
-<p>details works!</p>
+<strong>List of employees</strong>
+<table>
+  <thead>
+  <tr>
+    <td>First name</td>
+    <td>Last name</td>
+    <td>Date of birth</td>
+    <td>Speciality</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let employee of employees">
+    <td>{{employee.firstName}}</td>
+    <td>{{employee.lastName}}</td>
+    <td>{{employee.birthDate}}</td>
+    <td>{{employee.speciality}}</td>
+  </tr>
+  </tbody>
+</table>

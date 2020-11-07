@@ -8,16 +8,17 @@
   <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
     <li>
       <div class="mat-tree-node">
-        <button mat-icon-button matTreeNodeToggle
-                [attr.aria-label]="'Toggle ' + node.name">
+        <button mat-icon-button matTreeNodeToggle>
           <mat-icon class="mat-icon-rtl-mirror">
             {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
           </mat-icon>
         </button>
-        {{node.name}}
+        <strong>Department of {{node.name}}</strong>
       </div>
       <ul [class.example-tree-invisible]="!treeControl.isExpanded(node)">
-        <ng-container matTreeNodeOutlet></ng-container>
+        <ng-container matTreeNodeOutlet>
+          <app-departments-details [employees]="node.employees"></app-departments-details>
+        </ng-container>
       </ul>
     </li>
   </mat-nested-tree-node>
