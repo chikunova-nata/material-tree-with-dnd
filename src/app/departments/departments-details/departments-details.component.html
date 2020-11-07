@@ -1,19 +1,16 @@
 <strong>List of employees</strong>
-<table>
-  <thead>
-  <tr>
-    <td>First name</td>
-    <td>Last name</td>
-    <td>Date of birth</td>
-    <td>Speciality</td>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let employee of employees">
-    <td>{{employee.firstName}}</td>
-    <td>{{employee.lastName}}</td>
-    <td>{{employee.birthDate}}</td>
-    <td>{{employee.speciality}}</td>
-  </tr>
-  </tbody>
-</table>
+<div class="example-box__header">
+  <div class="example-box__cell">first name</div>
+  <div class="example-box__cell">last name</div>
+  <div class="example-box__cell">birth date</div>
+  <div class="example-box__cell">speciality</div>
+</div>
+<div class="example-box"
+     *ngFor="let employee of employees"
+     cdkDrag
+     [cdkDragData]="employee">
+  <div class="example-box__cell">{{employee.firstName}}</div>
+  <div class="example-box__cell">{{employee.lastName}}</div>
+  <div class="example-box__cell">{{employee.birthDate}}</div>
+  <div class="example-box__cell">{{employee.speciality}}</div>
+</div>
