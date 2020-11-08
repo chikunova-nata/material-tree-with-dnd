@@ -7,7 +7,7 @@ describe('DynamicDataSourceService', () => {
   let service: DynamicDataSourceService;
   let injector: TestBed;
   let httpMock: HttpTestingController;
-  const expectedData: DepartmentDataModel = {departments: [{ name: 'A' }]};
+  const expectedData: DepartmentDataModel = {departments: [{ name: 'A', employees: []}]};
 
   beforeEach(() => {
     TestBed.configureTestingModule({
